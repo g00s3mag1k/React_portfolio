@@ -70,7 +70,7 @@ function Form() {
             <textarea
               value={message}
               name="message"
-              rows="7" cols="43"
+              rows="8" cols="40"
               onChange={handleInputChange}/>
           </div>
         </label>
