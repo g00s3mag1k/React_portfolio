@@ -1,8 +1,10 @@
+import ProfilePic from '../../assets/images/ProfilePic.jpg'
+
 export default function About() {
     return (
       <div>
         <h1>About Me</h1>
-        <img style={{borderRadius:'35%', width:'250px', height:'300px'}} src={photo} alt='Jr.WebDeveloper'/>
+        <img style={{borderRadius:'35%', width:'250px', height:'300px'}} src={ProfilePic} alt='Jr.WebDeveloper'/>
         <p>
         Hello!! Welcome to my Portfolio Page! My name is Brandon Gonzalez, I have recently enrolled into a bootcamp program through the University of San Diego for web development. 
         I am excited to showcase my skills and expertise on this personal web page as I continue through the course in the next six months. 
