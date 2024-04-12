@@ -10,7 +10,18 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['bootstrap/dist/css/bootstrap.min.css']
-    }
-  }
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+        // Add the following line to set the correct MIME type
+        scriptType: 'module',
+      },
+    },
+  },
 });
