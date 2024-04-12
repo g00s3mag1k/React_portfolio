@@ -6,7 +6,7 @@ export default function Resume(){
     return(
     <div style={{ marginleft: "80px", marginTop:"50px" }}>
         <h1>Resume</h1>
-            <a href={resume} target="blank" download>Download my Resume</a>
+            <a style={{textDecorationLine:'underline'}}href={resume} target="blank" download>Download my Resume</a>
           <h2>Front-end Proficiencies</h2>
             <ul style={{fontSize:'large'}}>
                 <li>HTML</li>

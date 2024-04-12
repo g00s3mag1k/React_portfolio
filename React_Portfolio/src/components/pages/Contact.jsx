@@ -23,21 +23,23 @@ function Form() {
       }
 };
   
-    const handleFormSubmit = (e) => {
+const handleFormSubmit = (e) => {
+  e.preventDefault();
 
-      e.preventDefault();
-  
-      if (!validateEmail(email) || !name) {
-        setErrorMessage("Email or username is invalid");
-        return;
-      }
-      if (!message) {
-        setErrorMessage(`Message is required`);
-        return;
-      }
-  
-      setName("");
-      setEmail("");
+  if (!validateEmail(email) || !name) {
+      setErrorMessage("Email or username is invalid");
+      return;
+  }
+
+  if (!message) {
+      setErrorMessage("Message is required");
+      return;
+  }
+
+  setName("");
+  setEmail("");
+  setMessage(""); // Reset the message state
+  setErrorMessage(""); // Clear any previous error message
 };
 
     return (
@@ -52,7 +54,8 @@ function Form() {
               size="40"
               onChange={handleInputChange}
               type="text"
-              placeholder="email"/>
+              placeholder="email"
+              style={{color:'white'}}/>
           </div>
         </label>
         <label>Name : 
@@ -63,7 +66,8 @@ function Form() {
               size="40"
               onChange={handleInputChange}
               type="text"
-              placeholder="name"/>
+              placeholder="name"
+              style={{color:'white'}}/>
           </div>
         </label>
         <label>Message : 
@@ -72,6 +76,7 @@ function Form() {
               value={message}
               name="message"
               rows="8" cols="40"
+              style={{color:'white'}}
               onChange={handleInputChange}/>
           </div>
         </label>

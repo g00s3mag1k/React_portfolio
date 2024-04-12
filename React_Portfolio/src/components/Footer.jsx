@@ -3,7 +3,8 @@ const styles = {
       display:"inline-block",
       position:"fixed",
       bottom:0,
-      width: '100%',
+      width: '100%', 
+      textAlign: 'center'
 },
     img :{
       width: "30px",
