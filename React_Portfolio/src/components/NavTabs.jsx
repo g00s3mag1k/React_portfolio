@@ -1,44 +1,45 @@
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-      <ul className="nav nav-tabs">
+      <ul className="nav nav-tabs" style={{backgroundColor:'#091345', textAlign:"right", fontSize:"150%" }}>
         <li className="nav-item">
+          <b style={{color:'#ffffffa0', fontSize:'300%', margin:0, display:"inline-block"}}>Brandon A. Gonzalez</b>
           <a
-            href="#home"
-            onClick={() => handlePageChange('Home')}
+            href="#aboutMe"
+            onClick={() => handlePageChange('About Me')}
 
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
           >
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#about"
-            onClick={() => handlePageChange('About')}
-
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#blog"
-            onClick={() => handlePageChange('Blog')}
-
-            className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-          >
-            Blog
+            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>About Me</b>
           </a>
         </li>
         <li className="nav-item">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
-            
+
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
-            Contact
+            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>Contact</b>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#projects"
+            onClick={() => handlePageChange('Projects')}
+
+            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+          >
+            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>Projects</b>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#resume"
+            onClick={() => handlePageChange('Resume')}
+
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          >
+            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>Resume</b>
           </a>
         </li>
       </ul>
