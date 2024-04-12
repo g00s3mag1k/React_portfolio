@@ -1,15 +1,11 @@
 const styles = {
     footerstyle: {
-      backgroundColor:'#28587B',
+      backgroundColor:'091345',
       display:"flex",
-      flexDirection:"row",
       position:"fixed",
       bottom:0,
-      justifyContent: 'center',
-      padding: '10px 0',
       width: '100%',
 },
-    
     img :{
       width: "30px",
       height: "30px",
@@ -17,7 +13,7 @@ const styles = {
   
 const Footer = () => {
     return (
-      <div className="justify-content-center" style={styles.footerstyle}>
+      <div className="justify-content" style={styles.footerstyle}>
         <a style={{ padding:"10px" }} href="https://github.com/g00s3mag1k?tab=repositories" target="blank">
           <img style={styles.img}
             src="https://www.kindpng.com/picc/m/128-1280330_github-logo-png-github-icon-blue-png-transparent.png" 
