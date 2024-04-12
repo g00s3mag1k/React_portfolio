@@ -32,4 +32,4 @@ export default function PortfolioContainer(){
 
           <main className="mx-3">{renderPage()}</main>
         </div>
-)}
+)};

@@ -1,11 +1,16 @@
-#root {
+* {
+  font-family: 'Lucida Sans';
+  box-sizing: border-box;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +44,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

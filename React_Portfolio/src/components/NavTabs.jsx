@@ -44,7 +44,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
       </ul>
     );
-  }
+  };
   
   export default NavTabs;
   

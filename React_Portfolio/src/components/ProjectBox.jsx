@@ -18,4 +18,4 @@ export default function ProjectBox({title, description, image, repoLink, deploye
       </div>
     </div>
   );
-}
+};

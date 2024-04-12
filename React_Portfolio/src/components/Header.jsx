@@ -14,6 +14,6 @@ return(
 <div style={styles.headerStyle}>
     <PortfolioContainer/>
 </div>
-)}   
+)};
 
 export default Header;
