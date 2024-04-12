@@ -1,7 +1,6 @@
 const styles = {
     footerstyle: {
-      backgroundColor:'#091345',
-      display:"flex",
+      display:"inline-block",
       position:"fixed",
       bottom:0,
       width: '100%',

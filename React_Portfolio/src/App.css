@@ -1,8 +1,36 @@
 * {
   font-family: 'Lucida Sans';
   box-sizing: border-box;
+  background-color: black;
 }
 
+/* .p {
+  text-align: right;
+  font-size: large;
+} */
+
+.box {
+  margin: 40px;
+  border: 1px solid rgb(7, 173, 137);
+  height: 200px;
+}
+
+.hidden-link {
+  display: none;
+}
+
+.box:hover .hidden-link {
+  display: inline-block;
+  color: rgb(15, 10, 86);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  flex-direction: column;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

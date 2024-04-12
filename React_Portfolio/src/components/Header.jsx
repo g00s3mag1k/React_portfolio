@@ -3,7 +3,7 @@ import PortfolioContainer from "./PortfolioContainer";
 const styles = {
     headerStyle: {
         color: '#ffffffa0',
-        fontSize: '300%',
+        fontSize: '69%',
         margin: 0,
         display: 'inline-block'
     }

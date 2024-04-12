@@ -1,11 +1,14 @@
-// import resume from '../'
+import resume from '../../assets/Resume.pdf';
+import '../../App.css';
+
+
 export default function Resume(){
     return(
-    <div style={{ "margin-left": "80px","margin-top":"50px" }}>
+    <div style={{ marginleft: "80px", marginTop:"50px" }}>
         <h1>Resume</h1>
             <a href={resume} target="blank" download>Download my Resume</a>
           <h2>Front-end Proficiencies</h2>
-            <ul>
+            <ul style={{fontSize:'large'}}>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -17,7 +20,7 @@ export default function Resume(){
 
         <div>
           <h2>Back-end Proficiencies</h2>
-            <ul>
+            <ul style={{fontSize:'large'}}>
                 <li>APIs</li>
                 <li>Node</li>
                 <li>Express</li>

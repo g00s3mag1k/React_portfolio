@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../../App.css';
 
 function Form() {
 
@@ -74,7 +75,7 @@ function Form() {
               onChange={handleInputChange}/>
           </div>
         </label>
-          <button type="submit">Submit</button>
+          <button type="submit" style={{color:'white'}}>Submit</button>
         </form>
         {errorMessage && (
           <div>

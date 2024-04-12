@@ -1,15 +1,15 @@
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-      <ul className="nav nav-tabs" style={{backgroundColor:'#091345', textAlign:"right", fontSize:"150%" }}>
+      <ul className="nav nav-tabs" style={{marginInline:'20px', textAlign:"right", fontSize:"150%" }}>
         <li className="nav-item">
-          <b style={{color:'#ffffffa0', fontSize:'300%', margin:0, display:"inline-block"}}>Brandon A. Gonzalez</b>
+
           <a
             href="#aboutMe"
-            onClick={() => handlePageChange('About Me')}
+            onClick={() => handlePageChange('AboutMe')}
 
-            className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
           >
-            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>About Me</b>
+            <b style={{marginInline:'20px', color:'#ffffffa0', textDecoration:'none'}}>AboutMe</b>
           </a>
         </li>
         <li className="nav-item">
