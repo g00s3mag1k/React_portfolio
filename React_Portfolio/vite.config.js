@@ -13,4 +13,4 @@ export default defineConfig({
       external: ['bootstrap/dist/css/bootstrap.min.css']
     }
   }
-})
+});

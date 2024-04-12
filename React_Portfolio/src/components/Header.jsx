@@ -5,7 +5,7 @@ const styles = {
         color: '#ffffffa0',
         fontSize: '300%',
         margin: 0,
-        display: inline-block,
+        display: 'inline-block'
     }
 };
 
